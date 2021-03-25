@@ -7,7 +7,6 @@ const App = () => {
 
    const fetchData = async () => {
       setIsError(false);
-
       try {
          const result = await axios('https://www.boredapi.com/api/activity/');
          setData(result.data);
@@ -21,7 +20,6 @@ const App = () => {
    useEffect(() => {
       fetchData();
    }, []);
-
 
    return (
       <div>
